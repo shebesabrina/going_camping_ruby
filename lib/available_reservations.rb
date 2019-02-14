@@ -7,4 +7,3 @@ file = File.read("test-case.json")
 request_data = JSON.parse(file)
 
 reservations = ReservationService.new(request_data)
-# binding.pry

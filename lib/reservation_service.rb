@@ -9,7 +9,6 @@ class ReservationService
   def available_reservations
     available_campsites = @campsites.find_all do |campsite|
       campsite.reservations.empty? || !campsite.dates_unavailable(search)
-      # return false if campsite.dates_unavailable(search)
     end
     available_campsites.map(&:name)
   end

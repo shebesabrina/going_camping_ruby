@@ -14,7 +14,7 @@ describe 'default' do
     actual_reservations = @reservations.available_reservations
 
     expect(actual_reservations).to include("Comfy Cabin")
-    # expect(actual_reservations).to include("Rickety Cabin")
+    expect(actual_reservations).to include("Rickety Cabin")
     expect(actual_reservations).to include("Cabin in the Woods")
 
     expect(actual_reservations).to_not include("Cozy Cabin")
